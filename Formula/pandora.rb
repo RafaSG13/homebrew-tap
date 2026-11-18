@@ -5,21 +5,21 @@
 class Pandora < Formula
   desc "Keyboard-driven terminal vault for secrets, backed by the OS keyring"
   homepage "https://github.com/RafaSG13/Pandora"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RafaSG13/Pandora/releases/download/v0.2.0/pandora_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e3c9743efc8a133c75d1f4ffaaa68ec29758f7838ecc0af358879fe55f10d6f9"
+      url "https://github.com/RafaSG13/Pandora/releases/download/v0.3.0/pandora_0.3.0_darwin_amd64.tar.gz"
+      sha256 "2a5a53a580055cfb4c9ea15acf33a524cb1679658f54ffd34253b4733ba0d68a"
 
       define_method(:install) do
         bin.install "pandora"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RafaSG13/Pandora/releases/download/v0.2.0/pandora_0.2.0_darwin_arm64.tar.gz"
-      sha256 "197bb695f3f923cb7b7e025963db86686b323d35716439b51188da09ee24f579"
+      url "https://github.com/RafaSG13/Pandora/releases/download/v0.3.0/pandora_0.3.0_darwin_arm64.tar.gz"
+      sha256 "8db46983c1c60b5a535f07ae4c6771c48f107d58c9fd4d5cc17989c77cee939b"
 
       define_method(:install) do
         bin.install "pandora"
@@ -29,15 +29,15 @@ class Pandora < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RafaSG13/Pandora/releases/download/v0.2.0/pandora_0.2.0_linux_amd64.tar.gz"
-      sha256 "3f3320f18150d440e6bcf17ca5a43427639658954d07e755fb1ae4f02156f9f7"
+      url "https://github.com/RafaSG13/Pandora/releases/download/v0.3.0/pandora_0.3.0_linux_amd64.tar.gz"
+      sha256 "f079c5ff1d22775aba91ac8cc50f9cfb22f368cd1465f6a4540a220b3933994d"
       define_method(:install) do
         bin.install "pandora"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RafaSG13/Pandora/releases/download/v0.2.0/pandora_0.2.0_linux_arm64.tar.gz"
-      sha256 "eda72305f9af134831d44781a8a4718ea4ba599d34e7ec364cbc0a7388266826"
+      url "https://github.com/RafaSG13/Pandora/releases/download/v0.3.0/pandora_0.3.0_linux_arm64.tar.gz"
+      sha256 "8f20c82cc41e5fb82506ed110c950102b202408d26ba54be7cf10ff42ec280a6"
       define_method(:install) do
         bin.install "pandora"
       end
