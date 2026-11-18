@@ -28,8 +28,7 @@ class Minimal < Formula
   end
 
   test do
-    code = "import minimal; print(minimal.__version__)"
-    assert_equal version.to_s, shell_output("#{libexec}/bin/python -c '#{code}'").strip
+    assert_match version.to_s, shell_output("#{bin}/minimal --version")
     assert_match "minimal ext install", shell_output("#{bin}/minimal --help")
   end
 end
