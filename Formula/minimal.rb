@@ -4,8 +4,8 @@
 class Minimal < Formula
   desc "Extensible terminal coding-agent harness with a Textual interface"
   homepage "https://github.com/RafaSG13/Minimal"
-  url "https://files.pythonhosted.org/packages/80/d2/b0d1d07ec57829cb8104952f70189d44955e1dad5cd6e890f0ec2df3f4f6/mnml_agent-0.8.0.tar.gz"
-  sha256 "d04586e329147bad4a47901559d342bdd03b9cedbb1d21d29dc6797c38f9e766"
+  url "https://files.pythonhosted.org/packages/e7/08/bd9a56dc3b175b848d8a97c9161f5d7799a394f0546f3218e8c4173a2cb9/mnml_agent-0.9.0.tar.gz"
+  sha256 "8cccaf947829dfb70defe249f9f4c132934a3255b13806a8f77a8a870bdbbf36"
   license "MIT"
 
   depends_on "python@3.13"
